@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity
         initQuotes(); // this function shows the bottom quotes
     }
 
-
+    //The init Calendar points the XML id
+    //to the variable/attribute "studentcalendar"
+    //sets the background of the calendar
     public void initCalendar()
     {
         studentcalendar = (CalendarView) findViewById(R.id.calendarView); // find the calendar in the ID
@@ -40,6 +42,9 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    //The init quotes function loads the quotes from the file into the ArrayList
+    //Produces a random integer and uses that as the index of the ArrayList
+    //Uses that random quote to display on the bottom of the screen
     public void initQuotes()
     {
         Random random = new Random(); // this generates the quote randomness
@@ -63,10 +68,9 @@ public class MainActivity extends AppCompatActivity
         quoteOutput.setText(tempshow); // set the text to be that quote we initalized
 
     }
-    /*
-    The load quotes function loads quotes from the file contain the quotes and places them in
-    a string ArrayList called quotes. This function returns nothing.
-     */
+
+    //The load quotes function loads quotes from the file contain the quotes and places them in
+    //a string ArrayList called quotes. This function returns nothing.
     public void loadQuotes() throws IOException
     {
         int i = 0; // will be used for the index in the quotes ArrayList
