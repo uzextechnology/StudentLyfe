@@ -96,6 +96,10 @@
         "source": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
+        "merged": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_course_seq_plus_minus.xml",
+        "source": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\src\\main\\res\\layout\\activity_course_seq_plus_minus.xml"
+    },
+    {
         "merged": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
@@ -118,6 +122,10 @@
     {
         "merged": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
         "source": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_course_seq_letter_grade.xml",
+        "source": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\src\\main\\res\\layout\\activity_course_seq_letter_grade.xml"
     },
     {
         "merged": "C:\\Users\\amjadm_us\\AndroidStudioProjects\\StudentLyfe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",

@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:singleLine="true"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/coursenameentered"
         android:hint="Enter Course Name"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:text="Update"
         android:id="@+id/button2"
-        android:layout_alignTop="@+id/button3"
+        android:layout_alignTop="@+id/nextbutton"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
-        android:id="@+id/button3"
+        android:id="@+id/nextbutton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
 
@@ -89,13 +89,15 @@
             android:checked="false"
             android:layout_centerVertical="true"
             android:layout_alignStart="@+id/textView"
-            android:paddingRight="50dp"/>
+            android:paddingRight="50dp"
+            android:onClick="onRadioButtonClicked"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No"
             android:id="@+id/radioButton2"
+            android:onClick="onRadioButtonClicked"/>
             android:checked="false"
             android:layout_alignTop="@+id/radioButton"
             android:layout_toStartOf="@+id/button3" />
@@ -109,7 +111,7 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/gradeentered"
         android:paddingLeft="27dp"
         android:hint="100"
         android:maxLength="5"

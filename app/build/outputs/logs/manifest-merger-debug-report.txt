@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:2:11-47
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:3:11-69
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
 		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:5:5-26:19
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
@@ -52,25 +52,33 @@ ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\And
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:15:17-68
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:15:17-69
 	android:name
 		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:17:17-76
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
 		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:17:27-74
 activity#uzextechnology.studentlyfe.EventsActivity
-ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:20:9-21:20
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:20:9-52
 	android:name
 		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:20:19-49
 activity#uzextechnology.studentlyfe.Courses
-ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:22:9-23:20
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:21:9-45
 	android:name
-		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:22:19-42
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:21:19-42
 activity#uzextechnology.studentlyfe.CourseSequence1
-ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:24:9-25:20
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:22:9-53
 	android:name
-		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:24:19-50
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:22:19-50
+activity#uzextechnology.studentlyfe.CourseSeqLetterGrade
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:23:9-58
+	android:name
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:23:19-55
+activity#uzextechnology.studentlyfe.CourseSeqPlusMinus
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:24:9-65
+	android:name
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:24:19-53
 uses-sdk
 INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
