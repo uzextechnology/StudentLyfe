@@ -4,18 +4,24 @@ package uzextechnology.studentlyfe;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -26,6 +32,7 @@ public class MainActivity extends AppCompatActivity
 {
     private ArrayList<String> quotes; //stores quotes
     private TextView quoteOutput; //quote that's outputted
+    private TextView reminderOutput;
     private CalendarView studentcalendar; //calendar used
     private EditText dialoginput;
     private AlertDialog.Builder builder;
@@ -33,20 +40,40 @@ public class MainActivity extends AppCompatActivity
     private LinearLayout eventdialoglayout;
     private Spinner eventtypespinner;
     private ArrayAdapter<String> eventtypeadapter;
-    private String[] eventtypes = {"Exam","Project","Assignment","Group Meeting","Other"};
+    private String[] eventtypes = {"Exam date","Project due","Assignment due","Group Meeting","Other"};
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+  @Override
+  protected void onCreate(Bundle savedInstanceState)
+  {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_main);
       StudentEvents = new ArrayList<>();
 
       initCalendar(); //this function shows the calendar
       initQuotes(); // this function shows the bottom quotes
-    }
+  }
 
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu)
+  {
+    MenuInflater inflater = getMenuInflater();
+    inflater.inflate(R.menu.menu_main, menu);
+    return true;
+  }
+  @Override
+  public boolean onOptionsItemSelected(MenuItem item) {
+    // Handle item selection
+    switch (item.getItemId()) {
+      case R.id.eventsmenuoption:
+        showEventPage();
+        return true;
+      case R.id.coursesmenuoption:
+        showCoursesPage();
+        return true;
+      default:
+        return super.onOptionsItemSelected(item);
+    }
+  }
     //The init Calendar points the XML id
     //to the variable/attribute "studentcalendar"
     //sets the background of the calendar
@@ -128,9 +155,13 @@ public class MainActivity extends AppCompatActivity
         public void onSelectedDayChange(CalendarView view, final int year, final int month, final int dayOfMonth)
         {
 
+
           //this function is going to initialize all the components of the event dialog
           initEventDialog();
 
+          //setting the title of the dialog to the date itself
+          String dialogtitle = "New Event: " + Integer.toString(month + 1) + "/" + Integer.toString(dayOfMonth) + "/" + Integer.toString(year);
+          builder.setTitle(dialogtitle);
           // Set up the buttons and listeners for the dialog
           //the ok button will be in the case when the event does want to be created
           builder.setPositiveButton("OK", new DialogInterface.OnClickListener()
@@ -140,21 +171,35 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(DialogInterface dialog, int which)
             {
-              //create a new temp event to place in the StudentEvent ArrayList
-              StudentEvent tempEvent = new StudentEvent();
+              //checking if user inputted something
+              if ( dialoginput.getText().toString().length() < 2 )
+              {
+                Toast.makeText(getBaseContext(), "Please enter a valid event name. Try again.", Toast.LENGTH_LONG).show();
+                //do away with all the layout views
+                eventdialoglayout.removeAllViewsInLayout();
+                //close the dialog
+                dialog.cancel();
 
-              //setting all the attributes that are inputted from the user
-              //also setting the date that was pressed into the temp event
-              tempEvent.setEventname(dialoginput.getText().toString());
-              tempEvent.setYear(year);
-              tempEvent.setMonth(month);
-              tempEvent.setDay(dayOfMonth);
+              } else
+              {
+                //create a new temp event to place in the StudentEvent ArrayList
+                StudentEvent tempEvent = new StudentEvent();
 
-              //add the temp event into the student ArrayList
-              StudentEvents.add(tempEvent);
-              //remove all the view in the layout
-              eventdialoglayout.removeAllViewsInLayout();
+                //setting all the attributes that are inputted from the user
+                //also setting the date that was pressed into the temp event
+                tempEvent.setEventname(dialoginput.getText().toString());
+                tempEvent.setYear(year);
+                tempEvent.setMonth(month);
+                tempEvent.setDay(dayOfMonth);
+                tempEvent.setEventtype(eventtypespinner.getSelectedItem().toString());
 
+                //add the temp event into the student ArrayList
+                StudentEvents.add(tempEvent);
+                //remove all the view in the layout
+                eventdialoglayout.removeAllViewsInLayout();
+
+                showReminders();
+              }
             }
           });
           //setup the cancel button
@@ -220,10 +265,47 @@ public class MainActivity extends AppCompatActivity
 
     //sets the layout to the dialog and places the titles
     builder.setView(eventdialoglayout);
-    builder.setTitle("                New Event");
+
+
 
   }//end of initeventdialog
 
+  //Still underconstrucution.
+  //Must figure out the following:
+  //1.what are the priorities of is being shown
+  //2.what how much should be shown
+  public void showReminders()
+  {
+    String remindersdisplayed="";
+    int textViewlimit = 5;
+    EventController sorter = new EventController();
+    sorter.eventSortByDate(StudentEvents);
 
+    for( StudentEvent studentevent : StudentEvents )
+    {
+      if (textViewlimit == 0 ) break;
+      String month = Integer.toString(studentevent.getMonth()+1);
+      String day = Integer.toString(studentevent.getDay());
+      String year = Integer.toString(studentevent.getYear());
+
+      remindersdisplayed += month + "/" + day + "/" + year + ": " + studentevent.getEventname() + "\n";
+      textViewlimit--;
+    }
+
+    reminderOutput = (TextView)findViewById(R.id.actualreminders);
+    reminderOutput.setText(remindersdisplayed);
+
+
+
+  }
+  public void showEventPage()
+  {
+
+  }
+  public void showCoursesPage()
+  {
+    Intent coursepage = new Intent(this,Courses.class);
+    startActivity(coursepage);
+  }
 }//end of class
 

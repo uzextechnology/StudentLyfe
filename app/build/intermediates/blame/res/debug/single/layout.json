@@ -16,6 +16,10 @@
         "source": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/res/merged/debug/layout/activity_events.xml",
+        "source": "/Users/Alex/Documents/StudentLyfe/app/src/main/res/layout/activity_events.xml"
+    },
+    {
         "merged": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
         "source": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_screen_simple.xml"
     },
@@ -116,6 +120,10 @@
         "source": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/res/merged/debug/layout/activity_courses.xml",
+        "source": "/Users/Alex/Documents/StudentLyfe/app/src/main/res/layout/activity_courses.xml"
+    },
+    {
         "merged": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
         "source": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_item_subheader.xml"
     },
@@ -170,10 +178,6 @@
     {
         "merged": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/res/merged/debug/layout/tool_bar.xml",
-        "source": "/Users/Alex/Documents/StudentLyfe/app/src/main/res/layout/tool_bar.xml"
     },
     {
         "merged": "/Users/Alex/Documents/StudentLyfe/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",

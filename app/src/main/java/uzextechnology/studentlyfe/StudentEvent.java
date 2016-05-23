@@ -9,13 +9,14 @@ public class StudentEvent
   private int year;
   private int month;
   private int day;
-  private int eventtype;
+  private String eventtype;
   /*
-  For event types the integers represent:
-  1 is Exam Date
-  2 is Project Due
-  3 is Assignment Due
-  4 is Group Meeting
+  The event types are:
+   Exam Date
+   Project Due
+   Assignment Due
+   Group Meeting
+   Other
   */
 
 
@@ -69,12 +70,12 @@ public class StudentEvent
     this.day = day;
   }
 
-  public int getEventtype()
+  public String getEventtype()
   {
     return eventtype;
   }
 
-  public void setEventtype(int eventtype)
+  public void setEventtype(String eventtype)
   {
     this.eventtype = eventtype;
   }

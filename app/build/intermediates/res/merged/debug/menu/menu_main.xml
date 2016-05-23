@@ -3,8 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="uzextechnology.studentlyfe.MainActivity">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/eventsmenuoption"
+        android:title="@string/eventsMenuOption"
+       />
+    <item
+        android:id="@+id/coursesmenuoption"
+        android:title="@string/coursesMenuOption"
+        />
 </menu>
