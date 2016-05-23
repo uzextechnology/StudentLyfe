@@ -27,6 +27,8 @@
         </activity>
         <activity android:name="uzextechnology.studentlyfe.Courses" >
         </activity>
+        <activity android:name="uzextechnology.studentlyfe.CourseSequence1" >
+        </activity>
     </application>
 
 </manifest>

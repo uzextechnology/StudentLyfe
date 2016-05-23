@@ -1,0 +1,14 @@
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\R$xml$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\Courses$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\R$style$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\v7\appcompat\R$id$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\R$layout$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\R$menu$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\R$styleable$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\R$mipmap$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\R$string$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\R$id$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\design\R$id$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\R$integer$override.class
+CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\MainActivity$override.class

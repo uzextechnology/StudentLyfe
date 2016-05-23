@@ -1,98 +1,102 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:2:11-47
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:2:11-47
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:3:11-69
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:3:11-69
 	android:versionCode
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 application
-ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:5:5-24:19
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:5:5-26:19
+MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:9:9-35
 	android:allowBackup
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:7:9-43
 	android:theme
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:10:9-40
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:10:9-40
 activity#uzextechnology.studentlyfe.MainActivity
-ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:11:9-19:20
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:11:9-19:20
 	android:label
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:13:13-45
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:13:13-45
 	android:name
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:12:13-41
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:12:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:15:17-68
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:15:17-68
 	android:name
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:17:17-76
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:17:17-76
 	android:name
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:17:27-74
 activity#uzextechnology.studentlyfe.EventsActivity
-ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:20:9-21:20
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:20:9-21:20
 	android:name
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:20:19-49
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:20:19-49
 activity#uzextechnology.studentlyfe.Courses
-ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:22:9-23:20
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:22:9-23:20
 	android:name
-		ADDED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml:22:19-42
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:22:19-42
+activity#uzextechnology.studentlyfe.CourseSequence1
+ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:24:9-25:20
+	android:name
+		ADDED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml:24:19-50
 uses-sdk
-INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
+INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.3.0] /Users/Alex/Documents/StudentLyfe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.3.0] C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Alex/Documents/StudentLyfe/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\src\main\AndroidManifest.xml
