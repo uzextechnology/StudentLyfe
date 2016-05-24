@@ -1,9 +1,10 @@
 package uzextechnology.studentlyfe;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class StudentCourse
+public class StudentCourse implements Serializable
 {
   private String coursename;
   private double coursegrade;

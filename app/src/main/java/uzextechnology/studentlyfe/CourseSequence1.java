@@ -20,6 +20,9 @@ public class CourseSequence1 extends AppCompatActivity
   private Button cancelbutton;
   private Button updatebutton;
 
+  private double gradeVariable;
+  private String courseNameVariable;
+
   private int COURSENAMEFLAG= 0, RADIOBUTTONFLAG =0, GRADEENTEREDFLAG= 0;
   private String coursename;
   private double grade;
@@ -102,13 +105,17 @@ public class CourseSequence1 extends AppCompatActivity
       @Override
       public void afterTextChanged(Editable s)
       {
-
-        if (Double.parseDouble(s.toString()) > -.0000001 && Double.parseDouble(s.toString()) < 100)
+        if(!s.toString().isEmpty())
         {
-          GRADEENTEREDFLAG = 1;
-          grade = Double.parseDouble(s.toString());
+          if (Double.parseDouble(s.toString()) > -.0000001 && Double.parseDouble(s.toString()) < 100)
+          {
+            GRADEENTEREDFLAG = 1;
+            grade = Double.parseDouble(s.toString());
 
+          }
         }
+        else GRADEENTEREDFLAG = 0;
+
       }
     });
 
@@ -121,6 +128,10 @@ public class CourseSequence1 extends AppCompatActivity
         {
           Intent plusminusintent = new Intent(CourseSequence1.this,CourseSeqPlusMinus.class);
           //send some stuff here
+          gradeVariable = Double.parseDouble(gradeentered.getText().toString());
+
+          plusminusintent.putExtra("GradeVariablePlusMinus", gradeVariable); // Sending grade to the plusminus actvity
+
 
           startActivity(plusminusintent);
 
@@ -129,7 +140,12 @@ public class CourseSequence1 extends AppCompatActivity
         {
           Intent letterintent = new Intent(CourseSequence1.this,CourseSeqLetterGrade.class);
           //send some stuff here
-
+          StudentCourse currentcourse = new StudentCourse();
+          courseNameVariable = coursename;
+          gradeVariable = Double.parseDouble(gradeentered.getText().toString());
+          currentcourse.setCoursegrade(gradeVariable);
+          currentcourse.setCoursename(courseNameVariable);
+          letterintent.putExtra("currentCourse", currentcourse );
           startActivity(letterintent);
         }
         else
