@@ -36,7 +36,10 @@ public class CourseSeqLetterGrade extends AppCompatActivity {
         letterD =(EditText)findViewById(R.id.et_inputDLetter);
         UpdateLetterButton= (Button)findViewById(R.id.LetterSequenceButton);
 
-        LetterCourse = (StudentCourse)getIntent().getSerializableExtra("currentCourse");
+        LetterCourse = (StudentCourse)getIntent().getSerializableExtra("currentLetterCourse");
+        Toast.makeText(getBaseContext(), LetterCourse.getCoursename(), Toast.LENGTH_SHORT).show();
+
+
         UpdateLetterButton.setOnClickListener(new View.OnClickListener()
         {
             @Override

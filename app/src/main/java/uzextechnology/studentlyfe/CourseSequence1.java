@@ -128,11 +128,14 @@ public class CourseSequence1 extends AppCompatActivity
         {
           Intent plusminusintent = new Intent(CourseSequence1.this,CourseSeqPlusMinus.class);
           //send some stuff here
+          //gradeVariable = Double.parseDouble(gradeentered.getText().toString());
+
+          StudentCourse currentcourse = new StudentCourse();
+          courseNameVariable = coursename;
           gradeVariable = Double.parseDouble(gradeentered.getText().toString());
-
-          plusminusintent.putExtra("GradeVariablePlusMinus", gradeVariable); // Sending grade to the plusminus actvity
-
-
+          currentcourse.setCoursegrade(gradeVariable);
+          currentcourse.setCoursename(courseNameVariable);
+          plusminusintent.putExtra("currentPlusMinusCourse",currentcourse);
           startActivity(plusminusintent);
 
         }
@@ -145,7 +148,7 @@ public class CourseSequence1 extends AppCompatActivity
           gradeVariable = Double.parseDouble(gradeentered.getText().toString());
           currentcourse.setCoursegrade(gradeVariable);
           currentcourse.setCoursename(courseNameVariable);
-          letterintent.putExtra("currentCourse", currentcourse );
+          letterintent.putExtra("currentLetterCourse", currentcourse );
           startActivity(letterintent);
         }
         else

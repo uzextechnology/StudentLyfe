@@ -12,229 +12,209 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="A:"
-        android:layout_marginBottom="15dp"
-        android:id="@+id/textView7"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="A"
+        android:id="@+id/letterA"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_toStartOf="@+id/InputLetterA" />
+
+    <EditText
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/InputLetterA"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_toEndOf="@+id/LetterBPlus" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="A-:"
-        android:id="@+id/textView8"
-        android:layout_below="@+id/textView7"
-        android:layout_alignParentStart="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="A-"
+        android:id="@+id/LetterAMinus"
+        android:layout_alignTop="@+id/InputLetterA"
+        android:layout_toEndOf="@+id/InputLetterB" />
+
+    <EditText
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/InputLetterAMinus"
+        android:layout_above="@+id/LetterBPlus"
+        android:layout_toEndOf="@+id/LetterAMinus" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="B+:"
-        android:id="@+id/textView9"
-        android:layout_below="@+id/textView8"
-        android:layout_alignParentStart="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="B +"
+        android:id="@+id/LetterBPlus"
+        android:layout_below="@+id/InputLetterA"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="B:"
-        android:id="@+id/textView10"
-        android:layout_below="@+id/textView9"
-        android:layout_alignParentStart="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="B"
+        android:id="@+id/LetterB"
+        android:layout_above="@+id/InputLetterBPlus"
+        android:layout_alignStart="@+id/InputLetterB" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="B-:"
-        android:id="@+id/textView11"
-        android:layout_below="@+id/textView10"
-        android:layout_alignParentStart="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="B -"
+        android:id="@+id/LetterBMinus"
+        android:layout_alignTop="@+id/LetterB"
+        android:layout_alignStart="@+id/InputLetterAMinus" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="C+:"
-        android:id="@+id/textView12"
-        android:layout_below="@+id/textView11"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="C:"
-        android:id="@+id/textView13"
-        android:layout_below="@+id/textView12"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="C-:"
-        android:id="@+id/textView14"
-        android:layout_below="@+id/textView13"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="D+:"
-        android:id="@+id/textView15"
-        android:layout_below="@+id/textView14"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="D:"
-        android:id="@+id/textView16"
-        android:layout_below="@+id/textView15"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="D-:"
-        android:id="@+id/textView17"
-        android:layout_below="@+id/textView16"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/InputLetterBPlus"
+        android:layout_below="@+id/LetterBPlus"
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
-        android:paddingLeft="100dp"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/inputLetterA-"
-        android:layout_above="@+id/textView8"
-        android:layout_alignStart="@+id/inputLetterA" />
+        android:id="@+id/InputLetterB"
+        android:layout_below="@+id/LetterB"
+        android:layout_toEndOf="@+id/InputLetterA" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/inputLetterA"
-        android:layout_above="@+id/textView9"
-        android:layout_alignParentEnd="true"
-        android:text="100" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/inputLetterBPlus"
-        android:layout_above="@+id/textView10"
-        android:layout_alignStart="@+id/inputLetterA" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/inputLetterB"
-        android:layout_above="@+id/textView11"
-        android:layout_alignStart="@+id/inputLetterBPlus" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editText5"
-        android:layout_above="@+id/textView12"
-        android:layout_alignStart="@+id/inputLetterB" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editText6"
-        android:layout_above="@+id/textView13"
-        android:layout_alignEnd="@+id/editText5" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editText7"
-        android:layout_above="@+id/textView14"
-        android:layout_alignStart="@+id/editText6" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editText8"
-        android:layout_above="@+id/textView15"
-        android:layout_alignStart="@+id/editText7" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editText9"
-        android:layout_above="@+id/textView16"
-        android:layout_alignStart="@+id/editText8" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editText10"
-        android:layout_above="@+id/textView17"
-        android:layout_alignStart="@+id/editText9" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editText11"
-        android:layout_below="@+id/textView16"
+        android:id="@+id/InputLetterBMinus"
+        android:layout_below="@+id/LetterBMinus"
         android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="F:"
-        android:id="@+id/textView18"
-        android:layout_below="@+id/editText11"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="C +"
+        android:id="@+id/LetterCPlus"
+        android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="C"
+        android:id="@+id/LetterC"
+        android:layout_alignTop="@+id/LetterCPlus"
+        android:layout_alignStart="@+id/InputLetterB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="C -"
+        android:id="@+id/LetterCMinus"
+        android:layout_above="@+id/InputCMinus"
+        android:layout_alignStart="@+id/LetterBMinus" />
+
+    <EditText
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText"
-        android:layout_alignTop="@+id/textView18"
-        android:layout_alignEnd="@+id/editText11" />
+        android:id="@+id/InputLetterCPlus"
+        android:layout_below="@+id/LetterCPlus"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/InputLetterC"
+        android:layout_below="@+id/LetterC"
+        android:layout_toEndOf="@+id/InputLetterA" />
+
+    <EditText
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/InputCMinus"
+        android:layout_alignBottom="@+id/InputLetterC"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="D +"
+        android:id="@+id/LetterDPlus"
+        android:layout_below="@+id/InputLetterCPlus"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="D"
+        android:id="@+id/LetterD"
+        android:layout_alignTop="@+id/LetterDPlus"
+        android:layout_alignStart="@+id/InputLetterC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="F"
+        android:id="@+id/LetterF"
+        android:layout_alignTop="@+id/LetterD"
+        android:layout_alignStart="@+id/LetterCMinus" />
+
+    <EditText
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/InputLetterDPlus"
+        android:layout_below="@+id/LetterDPlus"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/InputLetterD"
+        android:layout_alignTop="@+id/InputLetterDPlus"
+        android:layout_alignStart="@+id/LetterD" />
+
+    <EditText
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/InputLetterF"
+        android:layout_below="@+id/LetterF"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:id="@+id/PlusMInusUPDATE"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
