@@ -45,7 +45,7 @@ public class CourseSeqLetterGrade extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(getBaseContext(), "This is UPDATED", Toast.LENGTH_SHORT).show();
+              // if(letterA.getText().toString().length() > 1)
             }
         });
     }
