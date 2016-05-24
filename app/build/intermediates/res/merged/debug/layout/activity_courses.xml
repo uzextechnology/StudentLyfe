@@ -26,8 +26,7 @@
         android:clickable="true"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:background="@null"
-        android:src="@drawable/courseadder"
+        app:backgroundTint="@android:color/transparent"
         android:id ="@+id/courseadding"
         android:layout_below="@+id/courseview"
         android:layout_alignEnd="@+id/courseview"/>

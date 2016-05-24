@@ -11,74 +11,36 @@
     tools:context="uzextechnology.studentlyfe.CourseSequence1">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
         android:singleLine="true"
-        android:layout_height="wrap_content"
         android:id="@+id/coursenameentered"
         android:hint="Enter Course Name"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Does this course use the +/- system?"
-        android:id="@+id/textView2"
-        android:layout_marginTop="65dp"
-        android:layout_below="@+id/et_inputALetter"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cancel"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Update"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/nextbutton"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next"
-        android:id="@+id/nextbutton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Enter Course Grade:"
-        android:id="@+id/textView"
-        android:textColor="#1565C0"
-        android:layout_below="@+id/radioGroup"
-        android:layout_toEndOf="@+id/button"
-        android:layout_marginTop="105dp" />
-
+        android:id="@+id/plusminusquestion"
+        android:layout_below="@id/coursenameentered"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
 
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/textView2"
-        android:layout_marginLeft="120dp"
-        android:paddingTop="30dp"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        android:id="@+id/radioGroup">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="40dp"
+                android:scaleX="1.5"
+                android:layout_below="@id/plusminusquestion"
+                android:scaleY="1.5"
+                android:id="@+id/radioGroup"
+                android:layout_centerInParent="true">
 
 
         <RadioButton
@@ -99,26 +61,59 @@
             android:id="@+id/radioButton2"
             android:onClick="onRadioButtonClicked"/>
             android:checked="false"
-            android:layout_alignTop="@+id/radioButton"
-            android:layout_toStartOf="@+id/button3" />
+            android:layout_alignTop="@+id/radioButton"/>
 
 
 
     </RadioGroup>
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
+        android:singleLine="true"
+        android:id="@+id/gradeentered"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/gradeentered"
-        android:paddingLeft="27dp"
-        android:hint="100"
+        android:layout_marginTop="50dp"
+        android:hint="Grade"
+        android:textSize="30sp"
         android:maxLength="5"
-        android:paddingTop="20dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/radioGroup"
-        android:layout_alignEnd="@+id/button2"
-        android:layout_marginLeft="10dp"/>
+        android:layout_below="@id/radioGroup"
+
+
+        android:layout_centerHorizontal="true"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:id="@+id/cancelbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/nextbutton"
+
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gradeentered"
+        android:text="Update"
+        android:id="@+id/updatebutton"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:id="@+id/nextbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
 
 </RelativeLayout>
