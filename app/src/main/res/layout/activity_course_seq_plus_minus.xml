@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="uzextechnology.studentlyfe.CourseSeqPlusMinus">
+    tools:context="uzextechnology.studentlyfe.CourseSeqPlusMinus"
+    android:background="@color/backgroundColor">
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,7 +18,7 @@
         android:text="A"
         android:id="@+id/letterA"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/InputLetterA" />
+        android:layout_alignParentStart="true"/>
 
     <EditText
         android:layout_width="95dp"
@@ -25,7 +26,7 @@
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/InputLetterA"
-        android:layout_alignTop="@+id/textView19"
+        android:layout_alignTop="@+id/letterA"
         android:layout_toEndOf="@+id/LetterBPlus" />
 
     <TextView

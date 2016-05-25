@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="uzextechnology.studentlyfe.CourseSequence1">
+    tools:context="uzextechnology.studentlyfe.CourseSequence1"
+    android:background="@color/backgroundColor">
 
     <EditText
         android:layout_width="300dp"
@@ -16,6 +17,9 @@
         android:singleLine="true"
         android:id="@+id/coursenameentered"
         android:hint="Enter Course Name"
+        android:textColor="#D84315"
+
+
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="30sp"/>
@@ -76,9 +80,12 @@
         android:ems="10"
         android:layout_marginTop="50dp"
         android:hint="Grade"
+        android:textColor="#80CBC4"
         android:textSize="30sp"
         android:maxLength="5"
         android:layout_below="@id/radioGroup"
+        android:textColorLink="@android:color/holo_blue_dark"
+
 
 
         android:layout_centerHorizontal="true"/>
@@ -109,7 +116,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="Letter Assignments"
         android:backgroundTint="@android:color/holo_green_light"
         android:id="@+id/nextbutton"
         android:layout_alignParentBottom="true"

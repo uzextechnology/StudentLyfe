@@ -9,12 +9,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="uzextechnology.studentlyfe.Courses">
+    tools:context="uzextechnology.studentlyfe.Courses"
+    android:background="@color/backgroundColor">
 
     <ListView
         android:id="@+id/courseview"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="425dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true">
     </ListView>
@@ -26,10 +27,11 @@
         android:clickable="true"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        app:backgroundTint="@android:color/transparent"
+        app:backgroundTint="@color/courseaddbuttonColor"
+        android:src="@drawable/courseadder"
         android:id ="@+id/courseadding"
-        android:layout_below="@+id/courseview"
-        android:layout_alignEnd="@+id/courseview"/>
+        android:layout_alignBottom="@+id/courseview"
+        android:layout_alignParentEnd="true"/>
 
 
 </RelativeLayout>

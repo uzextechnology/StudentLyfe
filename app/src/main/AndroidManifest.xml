@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="uzextechnology.studentlyfe">
+<manifest package="uzextechnology.studentlyfe"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
+        android:background="@color/backgroundColor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
@@ -12,16 +13,18 @@
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".EventsActivity" />
-        <activity android:name=".Courses" />
-        <activity android:name=".CourseSequence1" />
-        <activity android:name=".CourseSeqLetterGrade" />
-        <activity android:name=".CourseSeqPlusMinus"></activity>
+        <activity android:name=".EventsActivity"/>
+        <activity android:name=".Courses"/>
+        <activity android:name=".CourseSequence1"/>
+        <activity android:name=".CourseSeqLetterGrade"/>
+        <activity android:name=".CourseSeqPlusMinus"/>
+        <activity android:name=".GradeSpinnerTest">
+        </activity>
     </application>
 
 </manifest>

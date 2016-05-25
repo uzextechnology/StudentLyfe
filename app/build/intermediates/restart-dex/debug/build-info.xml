@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="xxhdpi"
+    format="7"
+    timestamp="84446265630763" >
+
+    <task
+        name="javac"
+        duration="461" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="227" />
+    <task
+        name="verifier"
+        duration="54" />
+
+    <artifact
+        location="/Users/Alex/Documents/StudentLyfe/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="84446265630763" >
+        <artifact
+            location="/Users/Alex/Documents/StudentLyfe/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

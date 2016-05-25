@@ -126,16 +126,16 @@ public class CourseSequence1 extends AppCompatActivity
       {
         if(GRADEENTEREDFLAG == 1 && COURSENAMEFLAG ==1 && RADIOBUTTONFLAG == 1)// this will take us to a plus/minus system
         {
-          Intent plusminusintent = new Intent(CourseSequence1.this,CourseSeqPlusMinus.class);
+          //Intent plusminusintent = new Intent(CourseSequence1.this,CourseSeqPlusMinus.class);
           //send some stuff here
           //gradeVariable = Double.parseDouble(gradeentered.getText().toString());
-
+          Intent plusminusintent = new Intent(CourseSequence1.this,GradeSpinnerTest.class);
           StudentCourse currentcourse = new StudentCourse();
           courseNameVariable = coursename;
           gradeVariable = Double.parseDouble(gradeentered.getText().toString());
           currentcourse.setCoursegrade(gradeVariable);
           currentcourse.setCoursename(courseNameVariable);
-          plusminusintent.putExtra("currentPlusMinusCourse",currentcourse);
+          //plusminusintent.putExtra("currentPlusMinusCourse",currentcourse);
           startActivity(plusminusintent);
 
         }

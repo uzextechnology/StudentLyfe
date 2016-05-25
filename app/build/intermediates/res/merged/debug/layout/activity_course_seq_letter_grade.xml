@@ -7,12 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="uzextechnology.studentlyfe.CourseSeqLetterGrade">
+    tools:context="uzextechnology.studentlyfe.CourseSeqLetterGrade"
+    android:background="@color/backgroundColor">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:text="Update"
+        android:text="Add Course"
         android:id="@+id/LetterSequenceButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
@@ -22,48 +23,56 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A:"
+        android:paddingBottom="10dp"
         android:id="@+id/textView3"
+        android:layout_marginTop="53dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="69dp" />
+        android:layout_toStartOf="@+id/LetterSequenceButton"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="B:"
+        android:paddingBottom="10dp"
+        android:layout_alignStart="@id/textView3"
         android:id="@+id/textView4"
+        android:layout_marginTop="35dp"
         android:layout_below="@+id/textView3"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="72dp" />
+        android:layout_alignEnd="@+id/textView3"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C:"
+        android:paddingBottom="10dp"
         android:id="@+id/textView5"
-        android:layout_alignBottom="@+id/et_inputCLetter"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="35dp"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="D:"
+        android:paddingBottom="10dp"
         android:id="@+id/textView6"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignStart="@+id/textView5"
         android:layout_below="@+id/textView5"
-        android:layout_alignParentStart="true" />
+        android:layout_alignEnd="@+id/textView5"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/et_inputALetter"
-        android:layout_above="@+id/textView4"
-        android:layout_alignStart="@+id/LetterSequenceButton" />
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -72,6 +81,7 @@
         android:ems="10"
         android:id="@+id/et_inputBLetter"
         android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@id/et_inputALetter"
         android:layout_alignStart="@+id/et_inputALetter" />
 
     <EditText
@@ -81,7 +91,9 @@
         android:ems="10"
         android:id="@+id/et_inputCLetter"
         android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignStart="@+id/et_inputBLetter"
+        android:layout_alignEnd="@+id/et_inputBLetter"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -90,5 +102,6 @@
         android:ems="10"
         android:id="@+id/et_inputDLetter"
         android:layout_alignBottom="@+id/textView6"
-        android:layout_alignStart="@+id/LetterSequenceButton" />
+        android:layout_alignStart="@+id/et_inputCLetter"
+        android:layout_alignEnd="@+id/et_inputCLetter"/>
 </RelativeLayout>

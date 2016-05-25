@@ -4,9 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="calendarColor">#1AFFFFFF</color>
-    <color name="backgroundColor">#D3D2B5</color>
+    <color name="backgroundColor">#ffefc8</color>
     <color name="backgroundTopColor">#C43439</color>
     <color name="actionbarColor">#CD4449</color>
+    <color name= "courseaddbuttonColor">#d2565b</color>
 </resources>
 
 
