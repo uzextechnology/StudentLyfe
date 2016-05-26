@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="22"
-    density="xxhdpi"
+    density="560dpi"
     format="7"
-    timestamp="84446265630763" >
+    timestamp="1029469732130355" >
 
     <task
         name="javac"
@@ -14,18 +14,18 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="227" />
+        duration="129" />
     <task
         name="verifier"
-        duration="54" />
+        duration="9" />
 
     <artifact
-        location="/Users/Alex/Documents/StudentLyfe/app/build/outputs/apk/app-debug.apk"
+        location="C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="84446265630763" >
+    <build timestamp="1029469732130355" >
         <artifact
-            location="/Users/Alex/Documents/StudentLyfe/app/build/outputs/apk/app-debug.apk"
+            location="C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 

@@ -18,6 +18,9 @@ public class CourseSequence1 extends AppCompatActivity
   private Button  nextbutton;
   private Button cancelbutton;
   private Button updatebutton;
+  private StudentCourse currentcourse;
+
+
 
   private double gradeVariable;
   private String courseNameVariable;
@@ -60,6 +63,7 @@ public class CourseSequence1 extends AppCompatActivity
     coursenameentered = (EditText)findViewById(R.id.coursenameentered);
     gradeentered = (EditText)findViewById(R.id.gradeentered);
     nextbutton = (Button)findViewById(R.id.nextbutton);
+    cancelbutton = (Button) findViewById(R.id.CancelButtonCourseSequence1);
 
     coursenameentered.addTextChangedListener(new TextWatcher()
     {
@@ -125,17 +129,22 @@ public class CourseSequence1 extends AppCompatActivity
       {
         if(GRADEENTEREDFLAG == 1 && COURSENAMEFLAG ==1 && RADIOBUTTONFLAG == 1)// this will take us to a plus/minus system
         {
-          //Intent plusminusintent = new Intent(CourseSequence1.this,CourseSeqPlusMinus.class);
-          //send some stuff here
-          //gradeVariable = Double.parseDouble(gradeentered.getText().toString());
           Intent plusminusintent = new Intent(CourseSequence1.this,CourseSeqPlusMinus.class);
-          StudentCourse currentcourse = new StudentCourse();
+
+          currentcourse = new StudentCourse();
           courseNameVariable = coursename;
           gradeVariable = Double.parseDouble(gradeentered.getText().toString());
           currentcourse.setCoursegrade(gradeVariable);
           currentcourse.setCoursename(courseNameVariable);
-          //plusminusintent.putExtra("currentPlusMinusCourse",currentcourse);
-          startActivity(plusminusintent);
+          currentcourse.setPlusMinus(true);
+          plusminusintent.putExtra("currentPlusMinusCourse",currentcourse);
+          startActivityForResult(plusminusintent, 23);
+
+
+
+
+
+
 
         }
         else if(GRADEENTEREDFLAG == 1 && COURSENAMEFLAG ==1 && RADIOBUTTONFLAG == 2)
@@ -147,8 +156,9 @@ public class CourseSequence1 extends AppCompatActivity
           gradeVariable = Double.parseDouble(gradeentered.getText().toString());
           currentcourse.setCoursegrade(gradeVariable);
           currentcourse.setCoursename(courseNameVariable);
+          currentcourse.setPlusMinus(false);
           letterintent.putExtra("currentLetterCourse", currentcourse );
-          startActivity(letterintent);
+          startActivityForResult(letterintent, 23);
         }
         else
         {
@@ -157,5 +167,35 @@ public class CourseSequence1 extends AppCompatActivity
       }
     });
 
+
+    cancelbutton.setOnClickListener(new View.OnClickListener()
+    {
+      @Override
+      public void onClick(View v)
+      {
+        finish();
+      }
+    });
     }
+
+  @Override
+  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    // Check which request we're responding to
+    if (requestCode == 23) {
+      // Make sure the request was successful
+      if (resultCode == RESULT_OK)
+      {
+        // The user picked a contact.
+        // The Intent's data Uri identifies which contact was selected.
+        currentcourse = (StudentCourse)getIntent().getSerializableExtra("CourseToSeq1");
+        Intent sendingCoursefromCourseSequence1 = new Intent();
+        sendingCoursefromCourseSequence1.putExtra("currentPlusMinusCoursetoMain",currentcourse);
+        setResult(RESULT_OK, sendingCoursefromCourseSequence1);
+        finish();
+        // Do something with the contact here (bigger example below)
+      }
+    }
+  }
+
+
   }

@@ -1,9 +1,11 @@
 package uzextechnology.studentlyfe;
 
+import java.io.Serializable;
+
 /**
  * Created by Alex on 5/25/16.
  */
-public class GradeThreshold
+public class GradeThreshold implements Serializable
 {
   private double gradethreshold;
 

@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:text="Cancel"
         android:backgroundTint="@android:color/holo_red_light"
-        android:id="@+id/cancelbutton"
+        android:id="@+id/CancelButtonCourseSequence1"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/nextbutton"

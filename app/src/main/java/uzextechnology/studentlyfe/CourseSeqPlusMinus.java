@@ -1,5 +1,6 @@
 package uzextechnology.studentlyfe;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -24,9 +25,12 @@ public class CourseSeqPlusMinus extends AppCompatActivity
   private Spinner letterspinner;
   private EditText inputgradeedittext;
   private Button updateplusminusgradebutton;
+  private Button finishedButton;
+  private Button cancelButton;
   private ArrayAdapter<String> listviewadapter;
   private ListView letterassignmentsLV;;
-
+  private StudentCourse currentcourse;
+  private GPACalculator gpaCalculator;
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -34,6 +38,13 @@ public class CourseSeqPlusMinus extends AppCompatActivity
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_grade_spinner_test);
 
+
+    cancelButton = (Button) findViewById(R.id.cancelbuttonplusminus);
+    finishedButton = (Button) findViewById(R.id.finalbutton);
+
+
+
+    currentcourse = (StudentCourse)getIntent().getSerializableExtra("currentPlusMinusCourse");
     String []letters = {" 1.      A"," 2.      A-"," 3.      B+"," 4.      B"," 5.      B-"," 6.      C+"," 7.      C"," 8.      C-"," 9.      D+","10.     D","11.     F"};
     for(String oneletter: letters)
     {
@@ -105,7 +116,30 @@ public class CourseSeqPlusMinus extends AppCompatActivity
         return false;
       }
     });
+    finishedButton.setOnClickListener(new View.OnClickListener()
+    {
+      @Override
+      public void onClick(View v)
+      {
+        Intent FinishedSequence = new Intent();
+        currentcourse.setPlusMinusMapping(PlusMinusMapping);
+        gpaCalculator = new GPACalculator(currentcourse);
+        currentcourse.setScaledgrade(gpaCalculator.GPAPlusMinusCalculator());
+        FinishedSequence.putExtra("CourseToSeq1", currentcourse);
+        setResult(RESULT_OK, FinishedSequence);
+        finish();
 
+      }
+    });
+
+    cancelButton.setOnClickListener(new View.OnClickListener()
+    {
+      @Override
+      public void onClick(View v)
+      {
+        finish();
+      }
+    });
 
 
 
@@ -113,11 +147,6 @@ public class CourseSeqPlusMinus extends AppCompatActivity
   }
   public void takeThresholds()
   {
-
-
-
-
-
 
 
   }

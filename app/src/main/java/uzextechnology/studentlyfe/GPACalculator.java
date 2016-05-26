@@ -2,6 +2,10 @@ package uzextechnology.studentlyfe;
 
 
 import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Map;
 
 public class GPACalculator
 {
@@ -17,9 +21,26 @@ public class GPACalculator
   private double   letterDPlus;
   private double   letterD;
   private double   letterF;
-
+  private double   []letterGradeArray;
+  private ArrayList<StudentCourse> StudentCourses;
+  private StudentCourse CurrentCourse;
   private double actualGrade;
 
+
+  public GPACalculator(StudentCourse CurrentCourse)
+  {
+    this.CurrentCourse = CurrentCourse;
+  }
+
+  public ArrayList<StudentCourse> getStudentCourses()
+  {
+    return StudentCourses;
+  }
+
+  public void setStudentCourses(ArrayList<StudentCourse> studentCourses)
+  {
+    StudentCourses = studentCourses;
+  }
 
   public void setActualGrade(double actualGrade)
   {
@@ -27,34 +48,16 @@ public class GPACalculator
   }
 
 
-  GPACalculator(double letterAMinus, double letterA, double letterBMinus, double letterBPlus, double letterB, double letterCMinus, double letterC, double letterCPlus, double letterD, double letterDPlus, double letterF)
-  {
-
-    this.letterAMinus  = letterAMinus;
-    this.letterA = letterA;
-    this.letterBPlus = letterBPlus;
-    this.letterB = letterB;
-    this.letterBMinus = letterBMinus;
-    this.letterCPlus = letterCPlus;
-    this.letterC = letterC;
-    this.letterCMinus = letterCMinus;
-    this.letterDPlus = letterDPlus;
-    this.letterD = letterD;
-    this.letterF = letterF;
-
-  }
-
-  GPACalculator(double letterA, double letterB, double letterC, double letterD, double letterF)
-  {
-    this.letterA = letterA;
-    this.letterB= letterB;
-    this.letterC = letterC;
-    this.letterD= letterD;
-    this.letterF = letterF;
-  }
-
   public double GPALetterCalculate()
   {
+    int i = 0;
+    for(GradeThreshold tempgrade: CurrentCourse.getPlusMinusMapping().values())
+    {
+       letterGradeArray[i] = tempgrade.getGradethreshold(); //putting all doubles into array
+      i++;
+    }
+
+
     if(actualGrade >= letterA)
     {
       return 4;
@@ -81,47 +84,57 @@ public class GPACalculator
 
   public double GPAPlusMinusCalculator()
   {
-    if(actualGrade >= letterA)
+
+    int i = 0;
+    letterGradeArray = new double[CurrentCourse.getPlusMinusMapping().size()];
+    for(GradeThreshold tempgrade: CurrentCourse.getPlusMinusMapping().values())
+    {
+      letterGradeArray[i] = tempgrade.getGradethreshold(); //putting all doubles into array
+      i++;
+    }
+    actualGrade = CurrentCourse.getCoursegrade();
+
+    if(actualGrade >= letterGradeArray[0])
     {
       return 4;
     }
-    else if(actualGrade >= letterAMinus)
+    else if(actualGrade >= letterGradeArray[1])
     {
       return 3.67;
     }
-    else if(actualGrade >= letterBPlus)
+    else if(actualGrade >= letterGradeArray[2])
     {
       return 3.33;
     }
-    else if(actualGrade >= letterB)
+    else if(actualGrade >= letterGradeArray[3])
     {
       return 3;
     }
-    else if(actualGrade >= letterBMinus)
+    else if(actualGrade >= letterGradeArray[4])
     {
       return 2.67;
     }
-    else if(actualGrade >= letterCPlus)
+    else if(actualGrade >= letterGradeArray[5])
     {
       return 2.33;
     }
-    else if(actualGrade >= letterC)
+    else if(actualGrade >= letterGradeArray[6])
     {
       return 2;
     }
-    else if(actualGrade >= letterCMinus)
+    else if(actualGrade >= letterGradeArray[7])
     {
       return 1.67;
     }
-    else if(actualGrade >= letterDPlus)
+    else if(actualGrade >= letterGradeArray[8])
     {
       return 1.33;
     }
-    else if(actualGrade >= letterD)
+    else if(actualGrade >= letterGradeArray[9])
     {
       return 1;
     }
-    else if( actualGrade < letterD && actualGrade > letterF)
+    else if( actualGrade < letterGradeArray[9] && actualGrade > letterGradeArray[10])
     {
       return .67;
     }

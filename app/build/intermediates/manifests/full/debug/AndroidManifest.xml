@@ -28,8 +28,7 @@
         <activity android:name="uzextechnology.studentlyfe.Courses" />
         <activity android:name="uzextechnology.studentlyfe.CourseSequence1" />
         <activity android:name="uzextechnology.studentlyfe.CourseSeqLetterGrade" />
-        <activity android:name="uzextechnology.studentlyfe.CourseSeqPlusMinus" />
-        <activity android:name="uzextechnology.studentlyfe.GradeSpinnerTest" >
+        <activity android:name="uzextechnology.studentlyfe.CourseSeqPlusMinus" >
         </activity>
     </application>
 
