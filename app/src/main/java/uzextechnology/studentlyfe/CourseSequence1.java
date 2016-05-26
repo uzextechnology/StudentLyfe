@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class CourseSequence1 extends AppCompatActivity
@@ -129,7 +128,7 @@ public class CourseSequence1 extends AppCompatActivity
           //Intent plusminusintent = new Intent(CourseSequence1.this,CourseSeqPlusMinus.class);
           //send some stuff here
           //gradeVariable = Double.parseDouble(gradeentered.getText().toString());
-          Intent plusminusintent = new Intent(CourseSequence1.this,GradeSpinnerTest.class);
+          Intent plusminusintent = new Intent(CourseSequence1.this,CourseSeqPlusMinus.class);
           StudentCourse currentcourse = new StudentCourse();
           courseNameVariable = coursename;
           gradeVariable = Double.parseDouble(gradeentered.getText().toString());

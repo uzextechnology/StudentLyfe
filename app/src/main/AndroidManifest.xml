@@ -22,8 +22,7 @@
         <activity android:name=".Courses"/>
         <activity android:name=".CourseSequence1"/>
         <activity android:name=".CourseSeqLetterGrade"/>
-        <activity android:name=".CourseSeqPlusMinus"/>
-        <activity android:name=".GradeSpinnerTest">
+        <activity android:name=".CourseSeqPlusMinus">
         </activity>
     </application>
 

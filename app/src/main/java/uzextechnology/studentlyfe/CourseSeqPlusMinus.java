@@ -2,60 +2,123 @@ package uzextechnology.studentlyfe;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
-public class CourseSeqPlusMinus extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class CourseSeqPlusMinus extends AppCompatActivity
+{
+
+  private Map<String,GradeThreshold > PlusMinusMapping= new TreeMap<>();
+  private ArrayAdapter<String> letteritems;
+  private Spinner letterspinner;
+  private EditText inputgradeedittext;
+  private Button updateplusminusgradebutton;
+  private ArrayAdapter<String> listviewadapter;
+  private ListView letterassignmentsLV;;
 
 
-    private StudentCourse PlusMinusCourse;
-    EditText  letterAMinus;
-    EditText  letterA;
-    EditText  letterBMinus;
-    EditText  letterBPlus;
-    EditText  letterB;
-    EditText  letterCMinus;
-    EditText  letterC;
-    EditText  letterCPlus;
-    EditText  letterDPlus;
-    EditText  letterD;
-    EditText  letterF;
-    Button UpdatePlusMinusButton;
+  @Override
+  protected void onCreate(Bundle savedInstanceState)
+  {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_grade_spinner_test);
 
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
+    String []letters = {" 1.      A"," 2.      A-"," 3.      B+"," 4.      B"," 5.      B-"," 6.      C+"," 7.      C"," 8.      C-"," 9.      D+","10.     D","11.     F"};
+    for(String oneletter: letters)
     {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_course_seq_plus_minus);
-        letterA =(EditText)findViewById(R.id.InputLetterA);
-        letterAMinus =(EditText)findViewById(R.id.InputLetterAMinus);
-        letterBPlus =(EditText)findViewById(R.id.InputLetterBPlus);
-        letterB =(EditText)findViewById(R.id.InputLetterB);
-        letterBMinus =(EditText)findViewById(R.id.InputLetterBMinus);
-        letterCPlus =(EditText)findViewById(R.id.InputLetterCPlus);
-        letterCMinus =(EditText)findViewById(R.id.InputCMinus);
-        letterC =(EditText)findViewById(R.id.InputLetterC);
-        letterF =(EditText)findViewById(R.id.InputLetterF);
-        letterD =(EditText)findViewById(R.id.InputLetterD);
-        letterDPlus =(EditText)findViewById(R.id.InputLetterDPlus);
-
-
-        UpdatePlusMinusButton= (Button)findViewById(R.id.PlusMInusUPDATE);
-
-        PlusMinusCourse = (StudentCourse)getIntent().getSerializableExtra("currentPlusMinusCourse");
-        Toast.makeText(getBaseContext(), PlusMinusCourse.getCoursename(), Toast.LENGTH_SHORT).show();
-
-        UpdatePlusMinusButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Toast.makeText(getBaseContext(), "This is UPDATED", Toast.LENGTH_SHORT).show();
-            }
-        });
+      GradeThreshold tempgrade = new GradeThreshold(0);
+      PlusMinusMapping.put(oneletter,tempgrade);
     }
+    letteritems = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,letters);
+    letterspinner = (Spinner)findViewById(R.id.letterspinner);
+    inputgradeedittext = (EditText)findViewById(R.id.inputgradeplusminus);
+
+    letterassignmentsLV =(ListView)findViewById(R.id.letterassignmentsLV);
+    listviewadapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,new ArrayList<String>());
+
+    letterassignmentsLV.setAdapter(listviewadapter);
+
+    letterspinner.setAdapter(letteritems);
+
+
+
+    inputgradeedittext.setOnKeyListener(new View.OnKeyListener() {
+      public boolean onKey(View v, int keyCode, KeyEvent event) {
+        if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER))
+        {
+          //if nothing is selected on the spinner and there is input in the edit text
+          if(letterspinner.getSelectedItemPosition() > -1 && !inputgradeedittext.getText().toString().isEmpty())
+          {
+            if( Double.parseDouble(inputgradeedittext.getText().toString()) > 0 &&  Double.parseDouble(inputgradeedittext.getText().toString()) < 100.1)
+            {
+              listviewadapter.clear();
+              String templetter = letterspinner.getSelectedItem().toString();
+              GradeThreshold tempgrade = new GradeThreshold(Double.parseDouble(inputgradeedittext.getText().toString()));
+
+              //putting into tree to allow automatic sorting and allow non duplicates
+
+              PlusMinusMapping.put(templetter, tempgrade);
+
+
+
+              for(String putletter: PlusMinusMapping.keySet())
+              {
+
+
+                if(!listviewadapter.equals(putletter))
+                {
+                  putletter+= ": " + Double.toString(PlusMinusMapping.get(putletter).getGradethreshold()) + "\n";
+                  listviewadapter.add(putletter);
+                }
+
+              }
+
+
+
+            }
+            else
+            {
+              Toast.makeText(getBaseContext(),"One or more fields are invalid!",Toast.LENGTH_SHORT).show();
+            }
+
+
+          }
+          else
+          {
+            Toast.makeText(getBaseContext(),"One or more fields are invalid!",Toast.LENGTH_SHORT).show();
+          }
+
+          return true;
+        }
+
+        return false;
+      }
+    });
+
+
+
+
+
+  }
+  public void takeThresholds()
+  {
+
+
+
+
+
+
+
+  }
 }
