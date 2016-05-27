@@ -1,0 +1,1 @@
+CHANGED,/Users/Alex/Documents/StudentLyfe/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/uzextechnology/studentlyfe/Courses_OverviewActivity$2.class

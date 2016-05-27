@@ -1,3 +1,0 @@
-CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\CourseSequence1$override.class
-CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\uzextechnology\studentlyfe\CourseSeqPlusMinus$2$override.class
-CHANGED,C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

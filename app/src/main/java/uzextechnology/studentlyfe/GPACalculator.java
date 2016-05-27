@@ -1,11 +1,7 @@
 package uzextechnology.studentlyfe;
 
 
-import android.widget.EditText;
-import android.widget.Toast;
-
 import java.util.ArrayList;
-import java.util.Map;
 
 public class GPACalculator
 {
@@ -22,24 +18,28 @@ public class GPACalculator
   private double   letterD;
   private double   letterF;
   private double   []letterGradeArray;
-  private ArrayList<StudentCourse> StudentCourses;
-  private StudentCourse CurrentCourse;
+  private ArrayList<Student_Course> studentCourses;
+  private Student_Course CurrentCourse;
   private double actualGrade;
 
 
-  public GPACalculator(StudentCourse CurrentCourse)
+  public GPACalculator(Student_Course CurrentCourse)
   {
     this.CurrentCourse = CurrentCourse;
   }
-
-  public ArrayList<StudentCourse> getStudentCourses()
+  public GPACalculator(ArrayList<Student_Course> courses)
   {
-    return StudentCourses;
+    this.studentCourses = courses;
   }
 
-  public void setStudentCourses(ArrayList<StudentCourse> studentCourses)
+  public ArrayList<Student_Course> getStudentCourses()
   {
-    StudentCourses = studentCourses;
+    return studentCourses;
+  }
+
+  public void setStudentCourses(ArrayList<Student_Course> studentCourses)
+  {
+    this.studentCourses = studentCourses;
   }
 
   public void setActualGrade(double actualGrade)
@@ -51,7 +51,7 @@ public class GPACalculator
   public double GPALetterCalculate()
   {
     int i = 0;
-    for(GradeThreshold tempgrade: CurrentCourse.getPlusMinusMapping().values())
+    for(DoubleLetterLimitsWrapper tempgrade: CurrentCourse.getPlusMinusMapping().values())
     {
        letterGradeArray[i] = tempgrade.getGradethreshold(); //putting all doubles into array
       i++;
@@ -87,7 +87,7 @@ public class GPACalculator
 
     int i = 0;
     letterGradeArray = new double[CurrentCourse.getPlusMinusMapping().size()];
-    for(GradeThreshold tempgrade: CurrentCourse.getPlusMinusMapping().values())
+    for(DoubleLetterLimitsWrapper tempgrade: CurrentCourse.getPlusMinusMapping().values())
     {
       letterGradeArray[i] = tempgrade.getGradethreshold(); //putting all doubles into array
       i++;
@@ -143,6 +143,20 @@ public class GPACalculator
       return 0;
     }
   }
+  public double getOverallGPA()
+  {
+    double numberofcourses = studentCourses.size();
+    double total = 0;
+    for( Student_Course tempcourse: studentCourses)
+    {
+      total += tempcourse.getScaledgrade();
+    }
+
+    return (total/numberofcourses);
+
+  }
+
+
 
 
 

@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="uzextechnology.studentlyfe.Courses"
+    tools:context=".Courses_OverviewActivity"
     android:background="@color/backgroundColor">
 
     <ListView
@@ -32,6 +32,30 @@
         android:id ="@+id/courseadding"
         android:layout_alignBottom="@+id/lv_courseview"
         android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Overall GPA:"
+        android:id="@+id/overallgpatitle"
+        android:layout_marginStart="34dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/overallgpaoutput"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No Added Courses"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:textColor="#ff0000"
+        android:id="@+id/overallgpaoutput"
+        android:layout_below="@+id/lv_courseview"
+        android:layout_toEndOf="@+id/overallgpatitle"/>
 
 
 </RelativeLayout>

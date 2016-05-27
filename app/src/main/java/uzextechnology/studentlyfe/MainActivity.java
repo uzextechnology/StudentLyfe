@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
     private CalendarView studentcalendar; //calendar used
     private EditText dialoginput;
     private AlertDialog.Builder builder;
-    private ArrayList<StudentEvent> StudentEvents;
+    private ArrayList<Student_Event> studentEvents;
     private LinearLayout eventdialoglayout;
     private Spinner eventtypespinner;
     private ArrayAdapter<String> eventtypeadapter;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
   {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_main);
-      StudentEvents = new ArrayList<>();
+      studentEvents = new ArrayList<>();
 
       initCalendar(); //this function shows the calendar
       initQuotes(); // this function shows the bottom quotes
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity
 
     //The newEvent method sets up a listener for when event occurs
     //makes a call to all the initialization of the dialog
-    //puts the event in the StudentEvents ArrayList
+    //puts the event in the studentEvents ArrayList
     // and shows the dialog itself
     public void newEvent()
     {
@@ -182,8 +182,8 @@ public class MainActivity extends AppCompatActivity
 
               } else
               {
-                //create a new temp event to place in the StudentEvent ArrayList
-                StudentEvent tempEvent = new StudentEvent();
+                //create a new temp event to place in the Student_Event ArrayList
+                Student_Event tempEvent = new Student_Event();
 
                 //setting all the attributes that are inputted from the user
                 //also setting the date that was pressed into the temp event
@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity
                 tempEvent.setEventtype(eventtypespinner.getSelectedItem().toString());
 
                 //add the temp event into the student ArrayList
-                StudentEvents.add(tempEvent);
+                studentEvents.add(tempEvent);
                 //remove all the view in the layout
                 eventdialoglayout.removeAllViewsInLayout();
 
@@ -279,9 +279,9 @@ public class MainActivity extends AppCompatActivity
     String remindersdisplayed="";
     int textViewlimit = 5;
     EventController sorter = new EventController();
-    sorter.eventSortByDate(StudentEvents);
+    sorter.eventSortByDate(studentEvents);
 
-    for( StudentEvent studentevent : StudentEvents )
+    for( Student_Event studentevent : studentEvents )
     {
       if (textViewlimit == 0 ) break;
       String month = Integer.toString(studentevent.getMonth()+1);
@@ -304,7 +304,7 @@ public class MainActivity extends AppCompatActivity
   }
   public void showCoursesPage()
   {
-    Intent coursepage = new Intent(this,Courses.class);
+    Intent coursepage = new Intent(this,Courses_OverviewActivity.class);
     startActivity(coursepage);
   }
 }//end of class

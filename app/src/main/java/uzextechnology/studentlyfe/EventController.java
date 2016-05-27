@@ -9,12 +9,12 @@ import java.util.TreeMap;
 public class EventController
 {
 
-  Map<Long, StudentEvent> studentEventMap = new TreeMap<>();
+  Map<Long, Student_Event> studentEventMap = new TreeMap<>();
 
 
-  public void eventSortByDate(ArrayList<StudentEvent> StudentEvents)
+  public void eventSortByDate(ArrayList<Student_Event> studentEvents)
   {
-    for( StudentEvent tempevent : StudentEvents )
+    for( Student_Event tempevent : studentEvents )
     {
 
       //add a 0 when it is a single digit on the month and day
@@ -24,10 +24,10 @@ public class EventController
       Long eventdate = Long.parseLong(fulldate);
       studentEventMap.put(eventdate, tempevent);
     }
-    StudentEvents.clear();
-    for( StudentEvent studentevent : studentEventMap.values() )
+    studentEvents.clear();
+    for( Student_Event studentevent : studentEventMap.values() )
     {
-     StudentEvents.add(studentevent);
+     studentEvents.add(studentevent);
     }
 
 

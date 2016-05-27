@@ -19,10 +19,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".EventsActivity"/>
-        <activity android:name=".Courses"/>
-        <activity android:name=".CourseSequence1"/>
-        <activity android:name=".CourseSeqLetterGrade"/>
-        <activity android:name=".CourseSeqPlusMinus">
+        <activity android:name=".Courses_OverviewActivity"
+                  android:noHistory="false"
+            />
+        <activity android:name=".Courses_EditingActivity"/>
+        <activity android:name=".Courses_WholeLetterGradeLimitsActivity"/>
+        <activity android:name=".Courses_PlusMinusLetterGradeLimitsActivity">
         </activity>
     </application>
 

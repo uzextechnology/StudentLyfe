@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
+    abi="armeabi-v7a,armeabi"
     api-level="22"
-    density="560dpi"
+    density="xxhdpi"
     format="7"
-    timestamp="1029469732130355" >
+    timestamp="133337802292130"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="461" />
+        duration="522" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="400" />
     <task
         name="instant-run-transform"
-        duration="129" />
+        duration="10" />
     <task
         name="verifier"
-        duration="9" />
+        duration="1" />
 
     <artifact
-        location="C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="/Users/Alex/Documents/StudentLyfe/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
-    <build timestamp="1029469732130355" >
+    <build timestamp="133251182961984" >
         <artifact
-            location="C:\Users\amjadm_us\AndroidStudioProjects\StudentLyfe\app\build\outputs\apk\app-debug.apk"
+            location="/Users/Alex/Documents/StudentLyfe/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="133337802292130"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/Alex/Documents/StudentLyfe/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
