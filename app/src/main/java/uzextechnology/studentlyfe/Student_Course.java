@@ -10,10 +10,11 @@ public class Student_Course implements Serializable
   private String coursename;
   private double coursegrade;
   private double scaledgrade;
+  private int hoursworth;
   private ArrayList<GradeItem> gradeitems;
   private String semester;
   private boolean isPlusMinus;
-  private Map<String,DoubleLetterLimitsWrapper> PlusMinusMapping;
+  private Map<String,DoubleLetterLimitsWrapper> gradeMapping;
 
   public double getScaledgrade()
   {
@@ -35,14 +36,14 @@ public class Student_Course implements Serializable
     isPlusMinus = plusMinus;
   }
 
-  public Map<String, DoubleLetterLimitsWrapper> getPlusMinusMapping()
+  public Map<String, DoubleLetterLimitsWrapper> getGradeMapping()
   {
-    return PlusMinusMapping;
+    return gradeMapping;
   }
 
-  public void setPlusMinusMapping(Map<String, DoubleLetterLimitsWrapper> plusMinusMapping)
+  public void setGradeMapping(Map<String, DoubleLetterLimitsWrapper> gradeMapping)
   {
-    PlusMinusMapping = plusMinusMapping;
+    this.gradeMapping = gradeMapping;
   }
 
   public String getCoursename()
